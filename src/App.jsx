@@ -1,8 +1,13 @@
 import "./App.css";
+import "./pages/HomePage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-red-700">Hello world!</h1>
+    <>
+      <HomePage />
+      <h1 className="text-xl font-bold underline text-red-900">Hello world!</h1>
+    </>
   );
 }
 
