@@ -7,7 +7,7 @@ import { faGear } from "@fortawesome/free-solid-svg-icons";
 
 const ChatPanel = () => {
   return (
-    <div className="relative h-full border basis-1/2 text-center p-4 bg-gray-200">
+    <div className="relative h-full border grow text-center p-4 bg-gray-200">
       <div className="flex gap-4 justify-between px-4">
         <div>
           <img

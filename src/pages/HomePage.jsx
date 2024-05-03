@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import "../components/TopNavBar";
 import TopNavBar from "../components/TopNavBar";
 import SettingPanel from "../components/SettingPanel";
@@ -6,13 +6,17 @@ import ChatPanel from "../components/ChatPanel";
 import ConversationPanel from "../components/ConversationPanel";
 
 const HomePage = () => {
+  const [showChat, setShowChat] = useState(true);
+  const toogleSideBar = (value) => {
+    setShowChat(value);
+  };
   return (
     <div>
-      <TopNavBar />
+      <TopNavBar setShowChat={toogleSideBar} />
       <div className="flex justify-between overflow-auto h-[calc(100vh-67px)]">
         <SettingPanel />
         <ChatPanel />
-        <ConversationPanel />
+        {showChat && <ConversationPanel />}
       </div>
     </div>
   );
