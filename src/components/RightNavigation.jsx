@@ -1,5 +1,3 @@
-import React from "react";
-
 const RightNavigation = () => {
   return (
     <div className="flex gap-4 justify-between items-center">

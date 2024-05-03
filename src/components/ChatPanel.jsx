@@ -2,6 +2,9 @@ import TextArea from "./ui/TextArea";
 import ChatTutorTitle from "./ChatTutorTitle";
 import GptImage from "../assets/images/gpt-image.png";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGear } from "@fortawesome/free-solid-svg-icons";
+
 const ChatPanel = () => {
   return (
     <div className="relative h-full border basis-1/2 text-center p-4 bg-gray-200">
@@ -19,6 +22,10 @@ const ChatPanel = () => {
       </div>
       <div className="w-full absolute bottom-0 left-0 rounded overflow-hidden p-2">
         <TextArea />
+        <FontAwesomeIcon
+          icon={faGear}
+          className="absolute top-4 right-4 text-gray-500 hover:cursor-pointer hover:text-gray-700 transition duration-200 ease-in-out"
+        />
       </div>
     </div>
   );

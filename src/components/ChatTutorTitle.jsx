@@ -1,16 +1,31 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEyeSlash, faEye } from "@fortawesome/free-solid-svg-icons";
+
 const ChatTutorTitle = () => {
   const [expand, setExpand] = useState(false);
   return (
     <div className="flex flex-col grow">
-      <div className="flex justify-between p-2 rounded bg-white shadow-md">
+      <div className="flex justify-between items-center p-2 rounded bg-white shadow-md">
         <p className="font-bold">ChatTutor</p>
-        <p
-          onClick={() => {
-            setExpand(!expand);
-          }}>
-          icon
-        </p>
+
+        {expand ? (
+          <FontAwesomeIcon
+            className="hover:cursor-pointer"
+            onClick={() => {
+              setExpand(!expand);
+            }}
+            icon={faEye}
+          />
+        ) : (
+          <FontAwesomeIcon
+            className="hover:cursor-pointer"
+            onClick={() => {
+              setExpand(!expand);
+            }}
+            icon={faEyeSlash}
+          />
+        )}
       </div>
       {expand && (
         <div className="w-full bg-white border rounded text-left p-4">
