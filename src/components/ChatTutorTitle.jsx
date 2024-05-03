@@ -31,15 +31,19 @@ const ChatTutorTitle = () => {
         )}
       </div>
       {expand && (
-        <div className="bg-white border rounded-b text-left p-4 shadow-md">
-          <p className="text-xs pb-2">
-            Hello I am your AI tutor. Select a PDF file from the menu at the top
-            and click on the text to get explanations.
-          </p>
-          <a className="text-indigo-500" href="#">
-            Ask a TA about this
-          </a>
-        </div>
+        <>
+          <div className="bg-white border text-left p-4 shadow-md">
+            <p className="text-xs pb-2">
+              Hello I am your AI tutor. Select a PDF file from the menu at the
+              top and click on the text to get explanations.
+            </p>
+          </div>
+          <div className="bg-white border border-t-0 rounded-b text-left p-4 shadow-md">
+            <a className="text-indigo-500" href="#">
+              Ask a TA about this
+            </a>
+          </div>
+        </>
       )}
     </div>
   );
