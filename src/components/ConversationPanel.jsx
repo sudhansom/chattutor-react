@@ -1,4 +1,5 @@
 import React from "react";
+import "./ConversationPanel.css";
 
 const ConversationPanel = () => {
   return (
@@ -11,6 +12,12 @@ const ConversationPanel = () => {
           ABOUT THIS PDF
         </p>
       </div>
+      <ul className="text-left mt-4 pl-4">
+        <li>Chat title 1</li>
+        <li>Chat title 2</li>
+        <li>Chat title 3</li>
+        <li>Chat title 4</li>
+      </ul>
     </div>
   );
 };
