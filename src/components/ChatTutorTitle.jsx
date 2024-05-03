@@ -6,7 +6,10 @@ const ChatTutorTitle = () => {
   const [expand, setExpand] = useState(false);
   return (
     <div className="flex flex-col grow">
-      <div className="flex justify-between items-center p-2 rounded bg-white shadow-md">
+      <div
+        className={`flex justify-between items-center p-2 bg-white shadow-md ${
+          expand ? "rounded-t" : "rounded"
+        }`}>
         <p className="font-bold">ChatTutor</p>
 
         {expand ? (
@@ -28,7 +31,7 @@ const ChatTutorTitle = () => {
         )}
       </div>
       {expand && (
-        <div className="w-full bg-white border rounded text-left p-4">
+        <div className="bg-white border rounded-b text-left p-4 shadow-md">
           <p className="text-xs pb-2">
             Hello I am your AI tutor. Select a PDF file from the menu at the top
             and click on the text to get explanations.
