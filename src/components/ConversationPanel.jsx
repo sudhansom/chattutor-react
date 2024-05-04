@@ -1,8 +1,13 @@
+import { useState } from "react";
 import "./ConversationPanel.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const ConversationPanel = () => {
+  const [showDelete, setShowDelete] = useState(false);
+  const mouseOver = () => {
+    setShowDelete(!showDelete);
+  };
   return (
     <div className="h-full border basis-1/5 text-center">
       <div className="flex justify-between">
@@ -41,14 +46,14 @@ const ConversationPanel = () => {
             />
           </div>
         </li>
-        <li>
+        <li onMouseOver={mouseOver} onMouseOut={mouseOver}>
           <span>Chat title 4</span>
-          <div>
+          {showDelete && (
             <FontAwesomeIcon
               className="hover:cursor-pointer hover:text-red-500"
               icon={faTrashCan}
             />
-          </div>
+          )}
         </li>
       </ul>
     </div>
