@@ -1,5 +1,6 @@
-import React from "react";
 import "./ConversationPanel.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const ConversationPanel = () => {
   return (
@@ -13,10 +14,42 @@ const ConversationPanel = () => {
         </p>
       </div>
       <ul className="text-left mt-4 pl-4">
-        <li>Chat title 1</li>
-        <li>Chat title 2</li>
-        <li>Chat title 3</li>
-        <li>Chat title 4</li>
+        <li>
+          <span>Chat title 1</span>
+          <div>
+            <FontAwesomeIcon
+              className="hover:cursor-pointer hover:text-red-500"
+              icon={faTrashCan}
+            />
+          </div>
+        </li>
+        <li>
+          <span>Chat title 2</span>
+          <div>
+            <FontAwesomeIcon
+              className="hover:cursor-pointer hover:text-red-500"
+              icon={faTrashCan}
+            />
+          </div>
+        </li>
+        <li>
+          <span>Chat title 3</span>
+          <div>
+            <FontAwesomeIcon
+              className="hover:cursor-pointer hover:text-red-500"
+              icon={faTrashCan}
+            />
+          </div>
+        </li>
+        <li>
+          <span>Chat title 4</span>
+          <div>
+            <FontAwesomeIcon
+              className="hover:cursor-pointer hover:text-red-500"
+              icon={faTrashCan}
+            />
+          </div>
+        </li>
       </ul>
     </div>
   );
