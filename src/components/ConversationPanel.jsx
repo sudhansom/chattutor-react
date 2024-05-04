@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ConversationPanel.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import { faTrashCan, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const ConversationPanel = () => {
   const [showDelete, setShowDelete] = useState(false);
@@ -21,7 +21,16 @@ const ConversationPanel = () => {
           ABOUT THIS PDF
         </p>
       </div>
-      <ul className="text-left mt-4">
+      <div className="flex gap-2 justify-center items-center p-1 bg-gray-100 hover:cursor-pointer group">
+        <FontAwesomeIcon
+          className="group-hover:cursor-pointer text-gray-600 group-hover:text-gray-900"
+          icon={faPlus}
+        />
+        <p className="font-bold group-hover:cursor-pointer text-gray-600 group-hover:text-gray-900">
+          New chat
+        </p>
+      </div>
+      <ul className="text-left">
         <li>
           <span>Chat title 1</span>
           <div>

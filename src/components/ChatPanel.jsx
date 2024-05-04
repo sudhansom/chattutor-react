@@ -11,7 +11,7 @@ const ChatPanel = () => {
       <div className="flex gap-4 justify-between px-4">
         <div>
           <img
-            className="rounded-full"
+            className="rounded-full mt-0.5"
             src={GptImage}
             height="40"
             width="40"
