@@ -23,7 +23,7 @@ const ConversationPanel = () => {
       </div>
       <div className="flex gap-2 justify-center items-center p-1 bg-gray-100 hover:cursor-pointer group">
         <FontAwesomeIcon
-          className="group-hover:cursor-pointer text-gray-600 group-hover:text-gray-900"
+          className="group-hover:cursor-pointer text-gray-500 group-hover:text-gray-900"
           icon={faPlus}
         />
         <p className="font-bold group-hover:cursor-pointer text-gray-600 group-hover:text-gray-900">
