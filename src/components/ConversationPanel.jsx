@@ -6,7 +6,10 @@ import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 const ConversationPanel = () => {
   const [showDelete, setShowDelete] = useState(false);
   const mouseOver = () => {
-    setShowDelete(!showDelete);
+    setShowDelete(true);
+  };
+  const mouseOut = () => {
+    setShowDelete(false);
   };
   return (
     <div className="h-full border basis-1/5 text-center">
@@ -46,7 +49,7 @@ const ConversationPanel = () => {
             />
           </div>
         </li>
-        <li onMouseOver={mouseOver} onMouseOut={mouseOver}>
+        <li onMouseOver={mouseOver} onMouseOut={mouseOut}>
           <span>Chat title 4</span>
           {showDelete && (
             <FontAwesomeIcon
