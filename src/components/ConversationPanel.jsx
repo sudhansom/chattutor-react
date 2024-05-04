@@ -21,7 +21,7 @@ const ConversationPanel = () => {
           ABOUT THIS PDF
         </p>
       </div>
-      <ul className="text-left mt-4 pl-4">
+      <ul className="text-left mt-4">
         <li>
           <span>Chat title 1</span>
           <div>
