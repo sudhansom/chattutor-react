@@ -25,7 +25,6 @@ const ChatPanel = () => {
         </div>
         <ChatTutorTitle />
       </div>
-      {chat && <p>{{chat}}</p>}
       <div className="w-full absolute bottom-0 left-0 rounded overflow-hidden p-2">
         <TextArea longText={longText} />
         <FontAwesomeIcon

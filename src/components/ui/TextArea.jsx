@@ -1,9 +1,21 @@
-import React from "react";
-
-const TextArea = () => {
+import { useState } from 'react';
+const TextArea = ({longText}) => {
+  const [v, setV] = useState('');
+  function sendText(event){
+    if (event.key === 'Enter' || event.keyCode === 13) {
+        longText(event.target.value);
+        setV('');
+    }
+  }
+  function handleChange(e){
+    setV(e.target.value);
+  }
   return (
     <textarea
       className="w-full block p-1 border border-slate-500 rounded"
+      onKeyDown={sendText}
+      onChange={handleChange}
+      value={v}
       id="story"
       name="story"
       rows="3"
