@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Prism from 'prismjs';
+
 import TextArea from "./ui/TextArea";
 import ChatTutorTitle from "./ChatTutorTitle";
 import GptImage from "../assets/images/gpt-image.png";
@@ -6,11 +8,14 @@ import GptImage from "../assets/images/gpt-image.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
 
+
 const ChatPanel = () => {
   const [chat, setText] = useState('');
   function longText (text) {
-    let val = <div> <pre> <code> {text} </code> </pre> </div> ;
+    Prism.highlightAll();
+    let val = <div className='mt-4'> <pre> <code className='language-html'> {text} </code> </pre> </div> ;
     setText(val)
+
   }
   return (
     <div className="relative h-full border grow text-center p-4 bg-gray-200">
