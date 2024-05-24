@@ -22,7 +22,7 @@ const RightNavigation = ({ setShowChat }) => {
         <div className="h-4 border border-blue-400 group-hover:border-blue-500 "></div>
       </div>
       <a href="https://forms.monday.com/forms/8dcad997de4ef2c74a10cb09178a17d7?r=euc1" target="_blank" role="button">
-      <FontAwesomeIcon className="text-blue-500 hover:text-blue-300" icon={faEnvelope} />
+      <FontAwesomeIcon className="text-blue-500 hover:text-blue-700" icon={faEnvelope} />
       </a>
     </div>
   );
