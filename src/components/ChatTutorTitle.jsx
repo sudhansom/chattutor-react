@@ -7,7 +7,7 @@ const ChatTutorTitle = () => {
   return (
     <div className="flex flex-col grow">
       <div
-        className={`flex justify-between items-center p-2 bg-white shadow-md ${
+        className={`flex justify-between items-center py-2 px-4 bg-white shadow-md ${
           expand ? "rounded-t" : "rounded"
         }`}>
         <p className="font-bold">ChatTutor</p>
