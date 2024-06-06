@@ -12,7 +12,7 @@ const TextArea = ({longText}) => {
   }
   return (
     <textarea
-      className="w-full block p-1 border border-slate-500 rounded"
+      className="w-full block p-1 border-2 border-gray-300 rounded"
       onKeyDown={sendText}
       onChange={handleChange}
       value={v}
