@@ -18,8 +18,8 @@ const TopNavBar = ({ setShowChat }) => {
           height="100"
           alt=""
         />
-        <Select />
       </div>
+      <Select />
       <RightNavigation setShowChat={setShowChat} />
     </div>
   );
