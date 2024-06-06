@@ -10,7 +10,7 @@ const ChatTutorTitle = () => {
         className={`flex justify-between items-center py-2 px-4 bg-white shadow-md ${
           expand ? "rounded-t" : "rounded"
         }`}>
-        <p className="font-bold">ChatTutor</p>
+        <p className="font-bold text-green-500">ChatTutor</p>
 
         {expand ? (
           <FontAwesomeIcon
