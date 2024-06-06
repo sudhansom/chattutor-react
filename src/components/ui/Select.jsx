@@ -2,7 +2,7 @@ const Select = () => {
   return (
     <div>
       <select
-        className="w-60 px-2 py-1 border-2 rounded"
+        className="w-60 px-2 py-1 border rounded"
         name="pdf"
         id="pdf-select">
         <option value="pdf">-- Select a file --</option>
