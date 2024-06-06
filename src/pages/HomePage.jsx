@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <div>
       <TopNavBar setShowChat={toogleSideBar} />
-      <div className="flex justify-between overflow-auto h-[calc(100vh-48px)]">
+      <div className="d-flex content-justify-between overflow-auto h-[calc(100vh-48px)]">
         <SettingPanel />
         <ChatPanel />
         {showChat && <ConversationPanel />}
