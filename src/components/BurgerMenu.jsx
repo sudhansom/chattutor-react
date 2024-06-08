@@ -19,8 +19,7 @@ const BurgerMenu = () => {
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          Remove this soon. I need to fill this part with menu
         </Offcanvas.Body>
       </Offcanvas>
     </>
