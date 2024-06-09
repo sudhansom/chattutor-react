@@ -14,10 +14,10 @@ const ConversationPanel = () => {
   return (
     <div className="h-full border basis-1/5 text-center">
       <div className="flex justify-between">
-        <p className="text-blue-500 font-bold text-center p-2 bg-gray-50 basis-1/2 text-xs hover:bg-gray-100 hover:cursor-pointer">
+        <p className="text-blue-500 font-bold text-center p-2 bg-gray-50 basis-1/2 text-xs hover:bg-gray-100 hover:cursor-pointer m-0">
           ALL CHATS
         </p>
-        <p className="text-center bg-slate-50 p-2 basis-1/2 font-bold text-xs hover:bg-gray-100 hover:cursor-pointer">
+        <p className="text-center bg-slate-50 p-2 basis-1/2 font-bold text-xs hover:bg-gray-100 hover:cursor-pointer m-0">
           ABOUT THIS PDF
         </p>
       </div>
@@ -26,11 +26,11 @@ const ConversationPanel = () => {
           className="group-hover:cursor-pointer text-gray-500 group-hover:text-gray-900"
           icon={faPlus}
         />
-        <p className="font-bold group-hover:cursor-pointer text-gray-600 group-hover:text-gray-900">
+        <p className="font-bold group-hover:cursor-pointer text-gray-600 group-hover:text-gray-900 m-0">
           New chat
         </p>
       </div>
-      <ul className="text-left">
+      <ul className="text-left p-0 m-0">
         <li>
           <span>Chat title 1</span>
           <div>
