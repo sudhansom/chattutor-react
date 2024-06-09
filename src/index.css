@@ -48,9 +48,9 @@ button:focus-visible {
   padding:12px;
   margin: 12px;
   border-radius: 12px;
+  text-align:center;
 }
 .welcome-text h2 {
-  text-align: center;
   font-size: 24px;
   font-weight: bold;
 }
@@ -60,7 +60,13 @@ button:focus-visible {
   background: lightblue;
   padding: 3px 6px;
   border-radius: 4px;
-  margin-right: 4px;;
+  margin-right: 9px;;
+}
+.welcome-text p {
+  display: inline-block;
+  margin: auto;
+  padding: 0 0 6px;
+  border-bottom: 2px solid gray;
 }
 
 @media (prefers-color-scheme: light) {
