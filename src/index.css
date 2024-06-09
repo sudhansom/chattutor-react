@@ -51,8 +51,16 @@ button:focus-visible {
 }
 .welcome-text h2 {
   text-align: center;
-  font-size: 18px;
-  
+  font-size: 24px;
+  font-weight: bold;
+}
+.welcome-text sup {
+  font-size: 12px;
+  font-weight: normal;
+  background: lightblue;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-right: 4px;;
 }
 
 @media (prefers-color-scheme: light) {
