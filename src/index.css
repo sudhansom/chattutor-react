@@ -46,7 +46,6 @@ button:focus-visible {
 .welcome-text {
   background: #eee;
   padding:12px;
-  margin: 12px;
   border-radius: 12px;
   text-align:center;
 }

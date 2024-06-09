@@ -4,7 +4,7 @@ import WelcomeText from './WelcomeText';
 
 const SettingPanel = () => {
   return (
-    <div>
+    <div className="p-2">
       <WelcomeText />
     </div>
   );
